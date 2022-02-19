@@ -1,0 +1,24 @@
+body
+{
+    background-color: rgb(167, 167, 167);
+}
+
+.Ei
+{
+    background-color: beige;
+    color: rgb(0, 153, 255);  
+    font-size: 24px; 
+    width: 30px;
+    height: 30px;
+    margin: 20px 10px; 
+    border-radius: 50%;
+    border: dashed;
+    text-align: center;
+    transition: width 1s, height 1s, background-color 2s;
+}
+.Ei:hover
+{
+    background-color: rgb(238, 255, 0);
+    width: 50px;
+    height: 50px;
+}
