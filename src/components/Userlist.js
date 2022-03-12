@@ -1,0 +1,26 @@
+import { useState } from 'react';
+import '../css/Userlist.css';
+
+function Userlist () {
+  const [trayStatus, setTrayStatus] = useState("open");
+
+  function onButtonClicked() 
+  {
+      if(trayStatus === "open")
+        {
+          setTrayStatus("close");
+        }
+        else if(trayStatus === "close")
+        {
+          setTrayStatus("open");
+        }
+  }
+
+  return (
+    <div className={"userlist "+trayStatus}>
+      <div className="close-button" value='TrayStatus' onClick={onButtonClicked}>x</div>
+    </div>
+  )
+}
+
+export default Userlist;

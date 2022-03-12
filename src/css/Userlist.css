@@ -1,0 +1,51 @@
+.userlist {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background-color: #39806a;
+  z-index: 100;
+  transition: background-color 2s width 2s left 2s;
+}
+
+.userlist.closed {
+  width: 10px;
+}
+
+.userlist.open {
+  width: 200px;
+  background-color: #00ffb3;
+}
+
+.userlist .close-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14pt;
+  background-color: azure;
+  border: gray 1px solid;
+  border-radius: 50%;
+  float: right;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-image: url("https://play-lh.googleusercontent.com/p6kS3dCcILt9Z4vRMxHXZTbRecqnZTx5ysBVp6Qe3fDofokRLuWjRxF8J0TkMTG2gKo=s180-rw");
+  background-size: contain;
+}
+
+.userlist .close-button:hover {
+  background-color: #cee740;
+}
+
+@media screen and (min-width: 768px) {
+  .userlist {
+    flex: 2;
+    position: relative;
+    background-color: #06668c;
+    width: unset;
+  }
+
+  .userlist .close-button {
+    display: none;
+  }
+}
